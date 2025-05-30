@@ -1,0 +1,14 @@
+#N canvas -9 0 1920 1016 12;
+#X obj 60 79 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 61 136 send inicio;
+#X floatatom 209 135 5 0 10 0 - - - 0;
+#X obj 209 77 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 211 191 send numero;
+#X obj 57 285 cnv 19 512 76 empty c1 El\ número\ es\ más\ pequeño.\ Intenta\ de\ nuevo! 20 12 0 12 #e1e1e1 #000000 0;
+#X text 54 13 El juego consiste en adivinar un número entre 1 y 10;
+#X text 54 41 Inicia el juego haciendo clic en elbotón.;
+#X text 273 132 Adivina un número;
+#X text 598 285 Lee el mensaje para saber si vas bien o mal.;
+#X connect 0 0 1 0;
+#X connect 2 0 4 0;
+#X connect 3 0 2 0;
